@@ -1,12 +1,18 @@
 <?php
 session_start();
-if(!isset($_SESSION['username'])) {
+
+if (isset($_POST['validLogin'])) {
+  $_SESSION['validLogin'] = $_POST['validLogin'];
+}
+
+if(!isset($_POST['validLogin']) && !isset($_SESSION['validLogin'])) {
   $filePath = explode('/', $_SERVER['PHP_SELF'], -1);
   $filePath = implode('/', $filePath);
   $redirect = "http://" . $_SERVER['HTTP_HOST'] . $filePath;
   header("Location: {$redirect}/login.php", true);
   exit();
 }
+
 ?>
 <html>
   <head>
@@ -24,16 +30,7 @@ if ($_SESSION['username'] == "") {
   exit(); 
 }
 
-/*
-if (empty($_POST['username']) && !isset($_SESSION['username'])) {
-  echo "A username must be entered. Click <a href='http://web.engr.oregonstate.edu/~sibailaj/cs290/assignment4-part1/src/login.php'>here</a> to return to the login screen.";
-  exit();
-}
-*/
-
 echo "<a href='http://web.engr.oregonstate.edu/~sibailaj/cs290/assignment4-part1/src/content2.php'>Click here for Content2</a><br>";
-
-
 
 if (!isset($_SESSION['visits'])) {
   $_SESSION['visits'] = 0;
