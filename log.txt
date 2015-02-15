@@ -1,0 +1,19 @@
+Start: Sun, 15 Feb 2015 11:00:00 -0800 
+End: Sun, 15 Feb 2015 12:03:44 -0800
+Tasks: finished adding the feature where a user gets redirected to login page if not logged in
+
+Start: Sun, 15 Feb 2015 00:15:00 -0800
+End: Sun, 15 Feb 2015 03:38:13 -0800
+Tasks: built login/content pages and session functionality. need to finish login page redirection
+
+Start: Sat, 14 Feb 2015 16:43:44 -0800
+End: Sat, 14 Feb 2015 18:00:25 -0800
+Tasks: finished loopback.php
+
+Start: Sat, 14 Feb 2015 14:03:29 -0800
+End: Sat, 14 Feb 2015 16:43:44 -0800
+Tasks: finished multtable.php
+
+Start: Sat, 14 Feb 2015 14:03:29 -0800
+End: Sat, 14 Feb 2015 14:03:29 -0800
+Tasks: initialized git repo
